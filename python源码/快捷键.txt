@@ -1,0 +1,125 @@
+Python-Vscode
+Ctrl + / ：选择多行代码，注为#。
+Shift +home:从光标所在位置到行开头之间的字符串
+Shift + End ：类似上。
+Ctrl + Z ：撤销上一步操作。
+Ctrl + X ：剪切所选，与Shift+home/End配合。
+Ctrl + C/V:复制/粘贴
+命令终端中如何复制之前所输入的?
+Win + .  : 特殊字符
+Ctrl + S : 保存。
+Ctrl + “+”/“-”:放大/缩小。
+Ctrl + C :当陷入死循环中，可强制退出。
+Ctrl + ~ :打开和关闭终端
+Shift + Enter : 在终端中运行选定的行代码。
+Ctrl + Tab:切换已打开的文件。
+pip空list：列出所有安装的库pyparsing, cycler, python-dateutil, kiwisolver, numpy, matplotlib
+pip空list空outdated:列出过期的库certifi, virtualenv, virtualenv-clone, pipenv
+pip空install空--upgrade空库名
+python解释器即python命令行
+python批量卸载/安装库。
+pip uninstall/install -r aa.txt
+python安装包安装第三方库
+下载好安装包——解压——cd到解压后的文件夹下——pip setup.py install
+Google translator 如何设置成打开即自动翻译，右击Chrome标签页
+点击  翻译成中文(T)  在弹出的对话框中修改为 一律翻译成英语。
+python创建虚拟环境：python -m venv .venv。
+http://blog.51cto.com/daimalaobing/2089686
+pip更新 python -m install -U pip
+如何查看第三方库的用法
+google 库名
+1、有Pypi的是python官方第三方库的文档，点击左侧文档即可查看。
+2、Pypi自身发布者写的文档 后边有Documation后缀。
+pip安装有时不成功，可以用pip3试试。
+终端字体大小：设置-首选项-功能-终端-Fontsize。
+
+Wox：
+    Alt+Space开启。    
+Snipaste：
+    F1 截图 F3 贴图 Shift+F3隐藏贴图
+    Ctrl+滑轮/+-：更改贴图的透明度，Shift+Esc：销毁贴图。
+    ，/。查看历史截图。在截图状态下，即按下F1后。
+    1 2 3 4旋转贴图。
+
+Vimium快捷键
+上/下：k/j
+大幅上/下：d/u
+回到顶/底部：gg/G
+刷新：r
+复制当前页面网址：yy
+打开当前页面的某一连接：f(在当前页面打开，原页面消失)，F(原页面不消失。)
+复制当前网页并打开：yt
+聚焦第一个文本输入框：gi（第二个则是2gi）
+后退/前进：H/L
+移动当前页面：<< 向左  /  >>  向右
+shift+Tab/Tab：逆序移动选择框/顺序移动选择框。
+关闭/恢复当前页面：x/X。
+o/O：终极搜索栏，前者搜索结果在当前页打开，后者在新标签页打开
+显示所以的标签页并快速切换：T
+
+win10快捷键
+Win+数字：打开任务栏的应用
+Win+T：循环浏览任务栏上的应用，回车打开。（只能循环固定
+的应用，要想循环整个任务栏{任务视图，搜索，应用栏，任务栏右下
+角}，则在按完Win+t后用Shift+Tab或Tab。）
+Win：唤出任务栏。
+Win+Ctrl+O：打开屏幕键盘。
+Win+E：打开资源管理器。
+Win+D：显示桌面。
+Win+L：快速锁屏。
+Win+b：任务栏右下角。
+Win+i：打开设置。
+Win+上箭头：最大化应用窗口。
+Win+下箭头：恢复应用窗口大小。
+Alt+F4：关闭应用-关机。
+Ctrl+w/t：关闭/打开标签页。
+shift+Tab/Tab：逆序移动选择框/顺序移动选择框。（对于打开的应用
+适用。）
+Alt+Tab：切换已打开的应用窗口，（按完后松开Tab，仍按住Alt，用
+← 和 →可顺序/逆序选择。）
+Ctrl+L：地址栏搜索。
+Ctrl+Shift+b：打开/隐藏书签。
+Ctrl+Shift+o：打开书签（可以选择某个书签并进入。）
+Ctrl+Shift+Esc：打开任务管理器。
+Ctrl+b：打开chrome侧边栏。
+Ctrl+Tab:顺序切换标签页。
+Ctrl+Shift+Tab：逆向切换标签页。
+在鼠标操作比较多的情况下，如Word：按下Alt作用等于chrome中的f/F。
+Fn+右Ctrl可以代替鼠标右键。
+C：/QuickStart是自定义了path路径。
+快速启动可以用Everything代替。
+敲键盘多用右ctrl和Alt、Shift。
+Fn+0:快速睡眠。
+
+Idm：
+Alt+鼠标左击下载链接可以取消Idm下载。
+
+Google
+Chrome检测植入恶意代码的插件：chrome://settings/cleanup。
+chrome://flags/ 中有哪些值得调整的选项？ 知乎。
+Momentum账号可以保存主题的进度。code：20001223。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MTU值的调试、查看与设置（不同网络环境下的MTU值不同，如长期处于该
+网络环境下，则需设置，最佳配置为本地MTU值 = 网络MTU值。）
+调试：
+    Win+R打开cmd，运行，输入ping -l 1472 -f www.baidu.com
+后回车。若发送失败，说明当前网络MTU < 1472；若成功，说明网络
+MTU > 1472。不断调试，直到 a时成功，a+1时失败，可得当前网络
+MTU值为a。
+查看：Win+R打开cmd，运行，输入netsh interface ipv4 show subinterfaces
+
